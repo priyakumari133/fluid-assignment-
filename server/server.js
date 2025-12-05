@@ -11,7 +11,6 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 let tasks = [];
 let taskId = 1;
 
-
 // GET all tasks
 app.get('/api/tasks', (req, res) => {
   res.json(tasks);
