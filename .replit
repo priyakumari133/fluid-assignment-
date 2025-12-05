@@ -1,0 +1,17 @@
+run = "bash start.sh"
+modules = ["nodejs-20"]
+
+[nix]
+channel = "stable-23_11"
+
+[env]
+VITE_API_URL = "https://${REPL_SLUG}.${REPL_OWNER}.repl.co/api"
+PORT = "3001"
+
+[[ports]]
+localPort = 3000
+externalPort = 3000
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
